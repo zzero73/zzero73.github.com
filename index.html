@@ -4,32 +4,246 @@
 
 	<head>
 		<meta charset="utf-8">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 		<title>Zero's Website</title>
 	</head>
 	
-	<body>
+	<style>
+		#container{
+			background-color: #F5E4D7;
+		}
+		#alert{
+			text-align: center;
+			font-weight: 600;
+		}
+		.card{
+			background-color: #E5D1D0;
+		}
+		#carousel{
+			margin: 10px auto;
+		}
+
+	</style>
 	
-		<a href="index.html">
-		<h1>這是Zero的第一個網頁</h1>
-		<h2>這是我最近喜歡的音樂《Orange-SPYAIR》</h2>	
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/YkVjY1F-Eoc?si=Dc5hGZtGFpQJy4Kz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-		<h2>這是我就讀的學校《國立臺北教育大學》</h2>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.278259251104!2d121.54206247592587!3d25.02462923866766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a908a8232611%3A0xeebfb2d71a5025c7!2z5ZyL56uL6Ie65YyX5pWZ6IKy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1708998164953!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</a>
-		<p>&nbsp;</p>
-		<p><a href="0312/index.html">0312-網頁容器	    </a></p>
-		<p><a href="0319/index.html">0319-CSS Part-I	    </a></p>
-		<p><a href="0326/index.html">0326-CSS Part-II</a></p>
-		<p><a href="https://sites.google.com/stu.ntue.edu.tw/zer0-hungry">0402-協作網站SDGs02</a></p>
-		<p><a href="0416/index.html">0416-Bootstrap網格</a></p>
-		<p><a href="./0423/index.html">0423-Bootstrap內容樣式</a></p>
-		<p><a href="./0423/bonus.html">0423-Bootstrap加分</a></p>
-		<p><a href="./0430/index.html">0430-Bootstrap公用類別與表單</a></p>
-		<p><a href="./0430/bonus.html">0430-Bootstrap加分</a></p>
-		<p><a href="./0507/index.html">0507-Bootstrap 元件(一)</a></p>
-		<p><a href="./0514/index.html">0514-Bootstrap 元件(二)</a></p>
-
+	<body>
+		
+		<div id="container">
+			
+			
+			<div id="nav">
+				<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  					<div class="container-fluid">
+						<a class="navbar-brand" href="#">Zero's</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+							  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+							</li>							
+							<li class="nav-item">
+							  <a class="nav-link active" aria-current="page" href="https://www.notion.so/73zero/Zero-dc5eeca1bb5e469caf9d363a8918a39c?pvs=4">My Website</a>
+							</li>
+							<li class="nav-item dropdown">
+							  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								More
+							  </a>
+							  <ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="https://www.youtube.com/watch?v=b0wS9GxGfPs&list=RDb0wS9GxGfPs&index=1">Favorite Song</a></li>
+								<li><a class="dropdown-item" href="https://www.ntue.edu.tw/">My School</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="https://www.instagram.com/73._.zero/">Instagram</a></li>
+							  </ul>
+							</li>
+						  </ul>
+						  <form class="d-flex" role="search">
+							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						  </form>
+						</div>
+					  </div>
+					</nav>
+			</div>
+			
+			
+			<div id="carousel">
+				<div id="carouselExample" class="carousel slide">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						  <img src="./img/4818342661423425800.5dbcb9227674c377eee473179faa4cf9.22111903.jpg" class="d-block w-50" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./img/4830954176863937951.1d054a7d68ee56cb95c1016df385e51e.22122316.jpg" class="d-block w-50" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./img/4846538237992835907.c3481d58ef93b29b6d5d158ab962ae35.23020410.jpg" class="d-block w-50" alt="...">
+						</div>						
+						<div class="carousel-item active">
+						  <img src="./img/4861437956080429261.ac3dd2921a771c7d39267b85452e47ea.23031712.jpg" class="d-block w-50" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./img/4887851247170827679.16e307d40130f4c624fb88c0c60b9fd7.23052910.jpg" class="d-block w-50" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./img/4910690968764556410.60974b96efd22086dbd4693b4d9f8214.23073110.jpg" class="d-block w-50" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./img/4921879970131614322.84d068c09380e5c2620e0b1abc667b2e.23083107.jpg" class="d-block w-50" alt="...">
+						</div>
+					</div>
+				  	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+				  	</button>
+  					<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    					<span class="visually-hidden">Next</span>
+  					</button>
+				</div>
+			</div>
+			
+			<div id="alert">
+				<div class="alert alert-dark" role="alert">
+				  A goal without a plan is just a wish.
+				</div>
+			</div>
+			
+			
+			<div id="card">
+				<div class="container text-center">
+				  	<div class="row">
+						<div class="col">
+						  <div class="card" style="width: 18rem;">
+  							<img src="..." class="card-img-top" alt="...">
+  							<div class="card-body">
+    							<h5 class="card-title">First Class</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">More</a>
+						  	</div>
+							</div>
+						</div>
+						<div class="col">
+						  <div class="card" style="width: 18rem;">
+  							<img src="..." class="card-img-top" alt="...">
+  							<div class="card-body">
+    							<h5 class="card-title">0312-網頁容器</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">More</a>
+						  	</div>
+							</div>
+						</div>
+						<div class="col">
+						  <div class="card" style="width: 18rem;">
+  							<img src="..." class="card-img-top" alt="...">
+  							<div class="card-body">
+    							<h5 class="card-title">0319-CSS Part-I</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">More</a>
+						  	</div>
+							</div>
+						</div>
+						<div class="col">
+						  <div class="card" style="width: 18rem;">
+  							<img src="..." class="card-img-top" alt="...">
+  							<div class="card-body">
+    							<h5 class="card-title">0326-CSS Part-II</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">More</a>
+						  	</div>
+							</div>
+						</div>
+				  	</div>
+				  	<div class="row">
+						<div class="col">
+						  <div class="card" style="width: 18rem;">
+  							<img src="..." class="card-img-top" alt="...">
+  							<div class="card-body">
+    							<h5 class="card-title">0402-協作網站SDGs02</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="https://sites.google.com/stu.ntue.edu.tw/zer0-hungry" class="btn btn-primary">More</a>
+						  	</div>
+							</div>
+						</div>v
+						<div class="col">
+						  <div class="card" style="width: 18rem;">
+  							<img src="..." class="card-img-top" alt="...">
+  							<div class="card-body">
+    							<h5 class="card-title">0416-Bootstrap網格</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">More</a>
+						  	</div>
+							</div>
+						</div>
+						<div class="col">
+						  <div class="card" style="width: 18rem;">
+  							<img src="..." class="card-img-top" alt="...">
+  							<div class="card-body">
+    							<h5 class="card-title">0423-Bootstrap內容樣式</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">More</a>
+						  	</div>
+							</div>
+						</div>
+						<div class="col">
+						  <div class="card" style="width: 18rem;">
+  							<img src="..." class="card-img-top" alt="...">
+  							<div class="card-body">
+    							<h5 class="card-title">0423-Bootstrap加分</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">More</a>
+						  	</div>
+							</div>
+						</div>
+					</div>
+				  	<div class="row">
+						<div class="col">
+						  <div class="card" style="width: 18rem;">
+  							<img src="..." class="card-img-top" alt="...">
+  							<div class="card-body">
+    							<h5 class="card-title">0430-Bootstrap公用類別與表單</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">More</a>
+						  	</div>
+							</div>
+						</div>
+						<div class="col">
+						  <div class="card" style="width: 18rem;">
+  							<img src="..." class="card-img-top" alt="...">
+  							<div class="card-body">
+    							<h5 class="card-title">0430-Bootstrap加分</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">More</a>
+						  	</div>
+							</div>
+						</div>
+						<div class="col">
+						  <div class="card" style="width: 18rem;">
+  							<img src="..." class="card-img-top" alt="...">
+  							<div class="card-body">
+    							<h5 class="card-title">0507-Bootstrap 元件(一)</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">More</a>
+						  	</div>
+							</div>
+						</div>
+						<div class="col">
+						  <div class="card" style="width: 18rem;">
+  							<img src="..." class="card-img-top" alt="...">
+  							<div class="card-body">
+    							<h5 class="card-title">0514-Bootstrap 元件(二)</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">More</a>
+						  	</div>
+							</div>
+						</div>
+				  	</div>
+				</div>
+			</div>
+			<footer></footer>
+		</div>
+	
 	</body>
 
 </html>
